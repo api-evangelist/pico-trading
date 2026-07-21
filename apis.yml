@@ -1,0 +1,51 @@
+aid: pico-trading
+url: https://raw.githubusercontent.com/api-evangelist/pico-trading/refs/heads/main/apis.yml
+name: Pico
+kind: company
+description: Pico (pico.net) is a trading-infrastructure and financial market data
+  company - not the creator-CRM company of the same name - providing global exchange
+  connectivity, colocation and managed infrastructure in 55+ data centers, Redline
+  trading software (InRush ticker plant feed handlers and Execution Gateway, acquired
+  2021), RedlineFeed normalized market data from 230+ venues, and Corvil network and
+  trading analytics (acquired 2019). Market data is delivered to entitled customers
+  via multicast feeds and an embedded InRush software API rather than public HTTP
+  endpoints, and Corvil exposes analytics via a REST API, SDK, and streaming to Kafka,
+  Splunk, and Elastic. Privately held; everything is sales-gated - there is no public
+  developer portal, no self-serve signup, and no public API reference, with product
+  documentation and the Corvil API docs behind the login-gated customer portal at
+  portal.pico.net.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial
+- Market Data
+- Trading
+- Real-Time
+- Low Latency
+- Feed Handlers
+- Order Execution
+- Network Analytics
+- Exchange Connectivity
+created: '2026-07-21'
+modified: '2026-07-21'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.pico.net/
+- type: Portal
+  url: https://portal.pico.net/
+- type: Blog
+  url: https://www.pico.net/blog/
+- type: GitHubOrganization
+  url: https://github.com/corvil
+- type: LinkedIn
+  url: https://www.linkedin.com/company/picotrading/
+- type: Support
+  url: https://www.pico.net/company/contact/
+- type: TermsOfService
+  url: https://www.pico.net/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.pico.net/privacy-policy
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,121 @@
+aid: pico-trading
+name: Pico
+review:
+  question: Does Pico (pico.net) expose a public, documented API surface a developer
+    can discover and onboard against?
+  answer: false
+  date: '2026-07-21'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Pico is an institutional trading-infrastructure and market data vendor
+    with a fully sales-gated posture. There is no developer portal
+    (developer.pico.net and docs.pico.net do not resolve; /apis, /developers,
+    and /api-docs on www.pico.net all return 404), no self-serve signup, no
+    public pricing page, no public status page, and no public API reference
+    or downloadable OpenAPI/AsyncAPI specification. The company's API surface
+    is real but customer-only and entitlement-managed: Redline provides a
+    "single API for market data and order execution" as a software library
+    (InRush ticker plant receivers deployed locally on customer application
+    servers, with Bloomberg and Reuters API bridges for legacy applications);
+    RedlineFeed delivers normalized consolidated data from 230+ venues as
+    multicast from a managed publishing hub; and Corvil Analytics markets
+    "API access to all analytics, trading and market data messages" via the
+    Corvil API and SDK plus streaming connectors to Kafka, Splunk, and
+    Elastic. All product documentation, including the Corvil API docs, sits
+    behind the login-gated Salesforce customer portal at portal.pico.net
+    (support.corvil.com 301-redirects there). Auth model for the customer
+    APIs is not publicly documented; access is governed by commercial
+    entitlements. Honest catalog entry: identity only, apis[] empty.
+  probes:
+    - url: https://www.pico.net/
+      status: 200
+    - url: https://developer.pico.net/
+      status: no-dns
+    - url: https://docs.pico.net/
+      status: no-dns
+    - url: https://www.pico.net/apis
+      status: 404
+    - url: https://www.pico.net/developers
+      status: 404
+    - url: https://www.pico.net/api-docs
+      status: 404
+    - url: https://portal.pico.net/
+      status: 200
+      note: Login-gated Salesforce Experience Cloud customer portal (resolves to /s/).
+    - url: https://support.corvil.com/
+      status: 301
+      note: Redirects to https://portal.pico.net/.
+    - url: https://www.pico.net/products/corvil-analytics/
+      status: 200
+      note: Markets Corvil API + SDK, REST, and streaming to Kafka/Splunk/Elastic; no docs links.
+    - url: https://www.pico.net/products/data-and-trading-software/redline-feed/
+      status: 200
+      note: RedlineFeed 230+ venues, multicast delivery, InRush receivers, Bloomberg/Reuters bridges; contact-sales only.
+    - url: https://www.pico.net/products/market-services/market-data/
+      status: 200
+    - url: https://github.com/corvil
+      status: 200
+      note: GitHub org named "Pico" (blog www.pico.net); 2 public repos, both website tooling, no API specs.
+    - url: https://github.com/picotrading
+      status: 200
+      note: Legacy Pico Trading org (picotrading.com redirects to pico.net); 39 public repos, all infrastructure Ansible roles, no API specs.
+    - url: https://status.pico.net/
+      status: no-dns
+    - url: https://www.pico.net/terms-and-conditions
+      status: 200
+    - url: https://www.pico.net/privacy-policy
+      status: 200
+  deliveryChannels:
+    - channel: Multicast
+      documented: true
+      note: RedlineFeed normalized consolidated feed distributed as multicast from a managed publishing hub.
+    - channel: SDK
+      documented: true
+      note: Redline InRush ticker plant receivers embedded on customer servers expose the normalized market data and order execution API; Corvil AppAgent is a software library with a simple API.
+    - channel: REST
+      documented: true
+      note: Corvil Analytics exposes analytics and captured trading/market data via a REST API (docs behind customer portal).
+    - channel: Kafka
+      documented: true
+      note: Corvil Streaming Data API connectors stream data to Kafka.
+    - channel: Splunk
+      documented: true
+      note: Corvil streaming/integration to Splunk (and Elastic).
+    - channel: WebSocket
+      documented: false
+    - channel: FIX
+      documented: false
+      note: Venue connectivity protocols are not publicly documented; not claimed.
+  commercialPosture:
+    selfServe: false
+    salesGated: true
+    freeTier: false
+    publicPricing: false
+    note: Talk-to-a-specialist model throughout; datasheets gated behind forms.
+  ownership: |
+    Privately held (formerly Pico Quantitative Trading; picotrading.com
+    redirects to pico.net). Pico acquired Corvil in 2019 and Redline Trading
+    Solutions in 2021, and is the current parent of both product lines.
+  openapiHarvested: false
+  openapiProvenance: No public OpenAPI, Swagger, or AsyncAPI artifact exists to
+    harvest; nothing was fabricated.
+sources:
+  - url: https://www.pico.net/products/corvil-analytics/
+    type: Documentation
+    note: '"Corvil is an open data system providing API access to all analytics, trading and market data messages and the underlying packets"; Corvil API and SDK; streaming to Elastic, Splunk, Kafka.'
+  - url: https://www.pico.net/products/data-and-trading-software/redline-feed/
+    type: Documentation
+    note: Single normalized API via locally deployed InRush receivers; multicast distribution; 230+ venues; Bloomberg and Reuters API bridges; contact-sales only.
+  - url: https://www.pico.net/products/data-and-trading-software/
+    type: Documentation
+    note: Redline high-performance software with common API for market data and order execution; software and FPGA-accelerated deployments.
+  - url: https://portal.pico.net/
+    type: Portal
+    note: Login-gated customer portal holding product and Corvil API documentation.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Bootstrap catalog entry created with identity, verified common
+    properties, and an empty apis[] list, honestly documenting a
+    sales-gated, entitlement-managed vendor with no public API docs.
