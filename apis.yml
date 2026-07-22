@@ -14,7 +14,7 @@ description: Pico (pico.net) is a trading-infrastructure and financial market da
   developer portal, no self-serve signup, and no public API reference, with product
   documentation and the Corvil API docs behind the login-gated customer portal at
   portal.pico.net.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pico-trading.png
 tags:
 - Financial
 - Market Data
@@ -26,10 +26,26 @@ tags:
 - Network Analytics
 - Exchange Connectivity
 created: '2026-07-21'
-modified: '2026-07-21'
+modified: '2026-07-22'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/pico-trading-domain-security.yml
+- type: LLMsTxt
+  url: llms/pico-trading-llms.txt
+- type: WellKnown
+  url: well-known/pico-trading-well-known.yml
+- type: Conformance
+  url: conformance/pico-trading-conformance.yml
+- type: Authentication
+  url: authentication/pico-trading-authentication.yml
+- type: OAuthScopes
+  url: scopes/pico-trading-scopes.yml
+- type: ChangeLog
+  url: changelog/pico-trading-changelog.yml
+- type: Documentation
+  url: https://www.pico.net/products/corvil-analytics/corvil-api-sdk/
 - type: Website
   url: https://www.pico.net/
 - type: Portal

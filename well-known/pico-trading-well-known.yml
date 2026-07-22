@@ -1,0 +1,40 @@
+generated: '2026-07-22'
+method: searched
+source: live probes of https://www.pico.net and https://portal.pico.net
+hosts:
+- host: https://www.pico.net
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 200
+    file: ../llms/pico-trading-llms.txt
+    note: Provider-published llms.txt Markdown index for AI agents, with Markdown
+      versions of all blog, knowledge-base, press, and resource pages.
+- host: https://portal.pico.net
+  note: Login-gated Salesforce Experience Cloud customer portal; most well-known
+    paths return 401 to anonymous requests, but OIDC discovery is public.
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: pico-trading-openid-configuration.json
+    note: Salesforce-hosted OpenID Connect discovery document for the customer
+      portal (issuer https://portal.pico.net, 36 scopes_supported, RS256).
+  - path: /.well-known/oauth-authorization-server
+    status: 401
+  - path: /.well-known/oauth-protected-resource
+    status: 401
+  - path: /.well-known/security.txt
+    status: 401
+  - path: /.well-known/api-catalog
+    status: 401
+  - path: /.well-known/ai-plugin.json
+    status: 401

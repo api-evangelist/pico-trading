@@ -1,0 +1,43 @@
+generated: '2026-07-22'
+method: searched
+source: https://portal.pico.net/.well-known/openid-configuration
+docs: https://portal.pico.net/
+note: Pico publishes no public API reference, so no product-API security
+  schemes can be derived. The only publicly documented authentication surface
+  is the login-gated Salesforce Experience Cloud customer portal
+  (portal.pico.net) that fronts all product and Corvil API documentation; its
+  OAuth 2.0 / OpenID Connect configuration is published via OIDC discovery.
+  Authentication to the product APIs themselves (Corvil REST API/SDK, Redline
+  InRush embedded API, RedlineFeed multicast entitlements) is
+  entitlement-managed and documented only behind the customer portal.
+summary:
+  types:
+  - oauth2
+  - openIdConnect
+  oauth2_flows:
+  - authorizationCode
+  - implicit
+schemes:
+- name: portalOIDC
+  type: openIdConnect
+  openIdConnectUrl: https://portal.pico.net/.well-known/openid-configuration
+  issuer: https://portal.pico.net
+  scope: Customer portal login (Salesforce Experience Cloud), not a public
+    product-API scheme.
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- name: portalOAuth2
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://portal.pico.net/services/oauth2/authorize
+    tokenUrl: https://portal.pico.net/services/oauth2/token
+  revocationUrl: https://portal.pico.net/services/oauth2/revoke
+  introspectionUrl: https://portal.pico.net/services/oauth2/introspect
+  registrationUrl: https://portal.pico.net/services/oauth2/register
+  token_endpoint_auth_methods:
+  - client_secret_post
+  - client_secret_basic
+  - private_key_jwt
+  sources:
+  - well-known/pico-trading-openid-configuration.json

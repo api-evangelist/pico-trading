@@ -1,0 +1,125 @@
+generated: '2026-07-22'
+method: searched
+source: https://portal.pico.net/.well-known/openid-configuration
+note: Pico publishes no public product-API OAuth documentation. These are the
+  scopes_supported advertised by the authorization server of the login-gated
+  Salesforce Experience Cloud customer portal (portal.pico.net) that gates all
+  product and Corvil API documentation. They are Salesforce platform scopes,
+  not Pico product-API scopes; descriptions are intentionally omitted rather
+  than inferred.
+schemes:
+- name: portalOAuth2
+  source: well-known/pico-trading-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://portal.pico.net/services/oauth2/authorize
+    tokenUrl: https://portal.pico.net/services/oauth2/token
+scopes:
+- scope: address
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: cdp_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: cdp_calculated_insight_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: cdp_identityresolution_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: cdp_ingest_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: cdp_profile_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: cdp_query_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: cdp_segment_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: chatbot_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: chatter_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: content
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: custom_permissions
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: data_cloud_user_claims
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: eclair_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: einstein_gpt_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: email
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: forgot_password
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: full
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: id
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: interaction_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: lightning
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: mcp_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: offline_access
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: openid
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: pardot_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: phone
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: profile
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: pwdless_login_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: refresh_token
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: scrt_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: sfap_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: user_registration_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: visualforce
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: wave_api
+  sources:
+  - well-known/pico-trading-openid-configuration.json
+- scope: web
+  sources:
+  - well-known/pico-trading-openid-configuration.json

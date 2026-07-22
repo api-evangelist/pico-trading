@@ -1,0 +1,38 @@
+generated: '2026-07-22'
+method: searched
+source: https://www.pico.net/blog/
+note: Pico publishes no dedicated dated changelog or release-notes page.
+  Corvil Analytics software releases are announced publicly via the Pico blog
+  and press releases; entries below are the announced releases only, with the
+  announcement date and URL. Detailed release notes sit behind the login-gated
+  customer portal (portal.pico.net).
+product: Corvil Analytics
+scheme: major.minor software releases
+current: '10.1'
+entries:
+- version: '10.2'
+  date: '2026-06-30'
+  status: announced-upcoming
+  url: https://www.pico.net/about/news/pico-and-lda-technologies-partner-to-deliver-high-fidelity-data-for-real-time-ai-and-trading-workflows/
+  highlights:
+  - Support for LDA Technologies NeoTap X aggregation metadata (high-precision
+    timestamps, per-port sequencing, data-integrity signals) ingested into the
+    Corvil analytics pipeline, at speeds up to 400Gbps.
+- version: '10.1'
+  date: '2024-10-15'
+  status: released
+  url: https://www.pico.net/blog/discover-corvil-analytics-10-1-today/
+  highlights:
+  - Network observability enhancements
+  - UX improvements
+  - Ethernet CRC error analytics
+  - Data acquisition enhancements
+- version: '10.0'
+  date: '2024-04-23'
+  status: released
+  url: https://www.pico.net/about/news/pico-launches-machine-learning-and-ai-capabilities-in-corvil-analytics-10-software-release/
+  highlights:
+  - General availability of Corvil Analytics 10.0
+  - Machine learning / AI capability that automatically identifies, correlates,
+    and narrates the underlying cause of business-impacting events, with
+    natural-language descriptions and proactive notification.

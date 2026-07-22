@@ -1,0 +1,221 @@
+# Pico
+
+> Pico is a global provider of technology services for the financial markets community. We deliver trading infrastructure (colocation, connectivity, market access), market data, and Corvil — a packet-level network and trading analytics platform used by exchanges, market makers, banks, and brokers.
+
+This file is a Markdown index for AI agents. URLs are relative to https://www.pico.net.
+
+## Markdown versions (AI-optimized)
+
+All blog posts, knowledge base articles, press releases, and resources are available as clean Markdown files:
+- Blog: `/blog/{slug}.md` — example: `/blog/schrodingers-cats.md`
+- Knowledge Base: `/kb/{slug}.md` — example: `/kb/fix-protocol.md`
+- Press: `/about/news/{slug}.md` — example: `/about/news/texas-stock-exchange-prepares-for-launch-pico-first-to-enable-connectivity.md`
+- Resources: `/resources/{slug}.md` — example: `/resources/voip-app-for-splunk.md`
+
+These are static files with YAML frontmatter and GFM body content. No HTML, no navigation, no scripts.
+
+## Products — Corvil Analytics Platform
+
+- [Corvil Analytics](/products/corvil-analytics): Packet-level analytics platform for trading, network, market data, and infrastructure observability
+- [Trading Analytics](/products/corvil-analytics/trading-analytics): Real-time trade monitoring, order flow analysis, and venue performance
+- [Network Analytics](/products/corvil-analytics/network-analytics): Nanosecond-resolution latency measurement across trading networks
+- [Market Data Analytics](/products/corvil-analytics/market-data-analytics): Feed health, gap detection, and market data quality monitoring
+- [Infrastructure Analytics](/products/market-services/infrastructure/infrastructure-analytics): Application and network infrastructure observability for trading systems
+- [Pre-Trade Risk](/products/data-and-trading-software/pre-trade-risk): Real-time pre-trade risk monitoring at packet level
+- [VoIP Analytics](/products/corvil-analytics/voip-analytics): Trading floor voice and turret call quality monitoring
+- [Security](/products/market-services/infrastructure/security): Security monitoring built on Corvil packet capture
+- [Corvil Management Center (CMC)](/products/corvil-analytics/corvil-management-center): Centralized control plane for Corvil deployments
+- [Corvil Appliances](/products/corvil-analytics/corvil-appliances): CNE hardware (CNE-12000, 10000, 9000, 8800, 7950, 7850, 6950)
+- [Corvil Sensor](/products/corvil-analytics/corvil-sensor): Software sensor for cloud and virtualized environments
+- [Corvil Decoders](/products/corvil-analytics/corvil-decoders): Protocol decoders for trading and market data formats
+- [Corvil AppAgent](/products/corvil-analytics/corvil-app-agent): Application-level instrumentation agent
+- [Corvil API & SDK](/products/corvil-analytics/corvil-api-sdk): REST API and SDK for programmatic access to Corvil data
+
+## Infrastructure & Connectivity
+
+- [Colocation & Hosting](/products/market-services/infrastructure/colocation-hosting): Tier-1 financial datacenter colocation in major trading venues
+- [Connectivity](/products/market-services/connectivity): Low-latency network connectivity between exchanges and trading firms
+- [PicoNet™](/products/market-services/connectivity/piconet): Pico's global low-latency trading network
+- [Cloud Services](/products/market-services/infrastructure/cloud-services): Cloud trading infrastructure
+- [Public Cloud](/products/market-services/infrastructure/cloud-services/public-cloud): AWS, Azure, GCP integration for trading workloads
+- [Private Cloud](/products/market-services/infrastructure/cloud-services/private-cloud): Dedicated private cloud for trading
+- [Hybrid Cloud](/products/market-services/infrastructure/cloud-services/hybrid-cloud): Hybrid cloud architectures bridging colo and public cloud
+- [Network Services](/products/market-services/connectivity/network-services): Managed network services
+- [Network Capture](/products/corvil-analytics/network-capture): Full packet capture for compliance and analytics
+
+## Market Access
+
+- [Exchange Services](/products/corvil-analytics/exchange): Exchange connectivity and market access
+- [Market Services](/products/market-services): Market data, market access, and trading services
+- [Venue Access](/products/market-services/connectivity/venue-access): Direct connectivity to global trading venues
+- [Order Execution Gateway](/products/data-and-trading-software/order-execution-gateway): Order routing and execution infrastructure
+- [Raw Market Data](/products/market-services/market-data/raw-market-data): Direct, unnormalized exchange market data feeds
+- [Historical Market Data](/products/market-services/market-data/historical-market-data): Historical tick and order book data
+- [Redline Feed](/products/data-and-trading-software/redline-feed): Redline normalized market data
+- [Consolidated Audit Trail](/products/corvil-analytics/consolidated-audit-trail): CAT reporting infrastructure
+- [Foreign Exchange](/products/corvil-analytics/foreign-exchange): FX trading infrastructure
+- [Fixed Income](/products/corvil-analytics/fixed-income): Fixed income trading infrastructure
+- [Digital Assets](/products/corvil-analytics/digital-assets): Crypto and digital asset trading infrastructure
+
+## Customer Segments
+
+- [Exchanges](/products/corvil-analytics/exchange): Solutions for exchanges and trading venues
+- [Market Makers](/products/corvil-analytics/market-maker): Solutions for market makers and HFT firms
+- [Brokers](/products/corvil-analytics/broker): Solutions for broker-dealers
+
+## Managed Services
+
+- [Managed Services](/products/data-and-trading-software/managed-services): Outsourced operation of trading infrastructure
+- [Service Operations](/products/market-services/infrastructure/service-operations): 24/7 global operations center
+- [Delivery Management](/products/market-services/infrastructure/delivery-management): Project delivery and onboarding
+- [Device Management](/products/market-services/infrastructure/device-management): Network device lifecycle management
+- [Technology Procurement](/products/market-services/infrastructure/technology-procurement): Hardware procurement for trading firms
+
+## Recent Blog Posts
+
+
+- [Seeing Through the Fog: Closing the Visibility Gap in Solace Messaging with Corvil Network Analytics](/blog/seeing-through-the-fog-closing-the-visibility-gap-in-solace-messaging-with-corvil-network-analytics.md): That's what Corvil brings to Solace environments: clarity when the architecture gets complex and the performance issues get subtle.
+
+- [AI-Ready Network Observability at 200Gbps](/blog/ai-ready-network-observability-at-200gbps.md): Pico and Dell launch the Corvil 12000, delivering 200Gbps sustained network capture and real-time analytics: the new benchmark for AI-ready network observability in data-intensive environments.
+
+- [Modernizing Rates Trading: Why the Future Belongs to Low-Latency Infrastructure](/blog/modernizing-rates-trading-why-the-future-belongs-to-low-latency-infrastructure.md): Rates markets are undergoing the same electronification equities saw a decade ago. Pico Redline's feed handler and execution gateway give institutions the low-latency infrastructure to compete.
+
+- [Pico in 2025: Scaling Network Observability, Trading Software, and Market Services](/blog/pico-in-2025-scaling-network-observability-trading-software-and-market-services.md): In 2025, Pico marked its 16th year delivering a deterministic observability layer for financial markets, from the Corvil 12000's 200Gbps benchmark to Redline's unified API and IntelliVUE's operational convergence.
+
+- [Pico to Expand Client Visibility Around Exchange Driven Initiatives](/blog/pico-to-expand-client-visibility-around-exchange-driven-initiatives.md): Pico managed a record 593 Exchange Driven Initiatives through Q3 2025 and is enhancing its client portal to give clients real-time visibility into impact assessment, delivery status and readiness tracking.
+
+- [Speculative Triggering and Surveillance in Trading Systems](/blog/speculative-triggering-and-surveillance-in-trading-systems.md): Speculative triggering, initiating trading requests before all data is serialized, sits at the intersection of technical creativity and compliance risk. Here's how Corvil Analytics helps exchanges and brokers monitor it.
+
+- [Pico Raw Historical Data, Providing Solid Foundations for Real World Backtesting](/blog/pico-historical-data-providing-solid-foundations-for-real-world-backtesting.md): This blog emphasizes backtesting's importance in developing trading strategies and confirming profitability. It covers historical data use, market data tech like raw data capture in PCAP format, and how Pico's extensive historical market data collection with Corvil Analytics helps clients test strategies in real scenarios.
+
+- [US Equities Markets – 2024 & 2025 Brings Much Change to the Trading Landscape](/blog/us-equities-markets-2024-and-2025-brings-much-change-to-the-trading-landscape.md): Does anyone else question how many more times they will hear in the news that yet another US equities trading venue is set to open soon?
+
+- [Historic Market Volumes Amid Tariff Turbulence](/blog/historic-market-volumes-amid-tariff-turbulence.md): Using Corvil Analytics, the Pico Operations team have identified microbursts and bottlenecks in the global system during these historic peaks.
+
+- [Enterprise Observability: Why Network Visibility Must Extend Beyond the Trading Floor](/blog/enterprise-observability-why-network-visibility-must-extend-beyond-the-trading-floor.md): Financial institutions are expanding network observability beyond the trading desk to retail, wealth management, and back-office. Here's why enterprise-wide visibility is now a strategic imperative.
+
+- [Reflecting on Our Continued Growth in 2024](/blog/building-on-success-reflecting-on-our-continued-growth-in-2024.md): As we welcome 2025, it's time to reflect on an incredible year of growth, innovation, and collaboration.
+
+- [Discover Corvil Analytics 10.1 Today](/blog/discover-corvil-analytics-10-1-today.md): Corvil Analytics 10.1 delivers major enhancements across network observability, UX, Ethernet CRC error analytics, and data acquisition, built on what clients are telling us matters most.
+
+- [Corvil AppAgent and the x86 Timestamp Counter](/blog/corvil-appagent-and-the-x86-timestamp-counter.md): Corvil AppAgent is a software library that generates highly accurate timestamps in their application, and to streamline sharing of those timestamps with the Corvil Analytics platform.
+
+- [Exchange Driven Initiatives: 2024 Mid-Year Review](/blog/exchange-driven-initiatives-2024-mid-year-review.md): Rate of Exchange mandated changes continue to be high in 2024. Recap changes delivered to date and outlook for remainder of 2024.
+
+- [Want to get the most from your Corvil investment? Become Corvil Certified!](/blog/want-to-get-the-most-from-your-corvil-investment-become-corvil-certified.md): Explore our Corvil Analytics certification courses to ensure you''re getting the most from your Corvil deployment.
+
+
+## Recent Press Releases
+
+
+- [Pico and ITRS Partner to Bring Network-Derived Observability to Indian Financial Markets](/about/news/pico-and-itrs-partner-to-bring-network-derived-observability-to-indian-financial-markets.md): New partnership combines ITRS’ observability platform with Pico’s Corvil Analytics to give firms an independent, high-fidelity view of electronic trading performance, business latency and operational resilience.
+
+- [Pico and LDA Technologies Partner to Deliver High-Fidelity Data for Real-Time AI and Trading Workflows](/about/news/pico-and-lda-technologies-partner-to-deliver-high-fidelity-data-for-real-time-ai-and-trading-workflows.md): New integration combines LDA’s NeoTap X technology with Pico’s Corvil Analytics 10.2 to deliver high-fidelity packet data, precise timing and integrity validation at speeds up to 400Gbps for trading, observability, and AI-driven workflows.
+
+- [Texas Stock Exchange Prepares for Launch: Pico First to Enable Connectivity](/about/news/texas-stock-exchange-prepares-for-launch-pico-first-to-enable-connectivity.md): Extranet connectivity to TXSE is now available via PicoNet™, Pico’s globally comprehensive network platform. Trading firms, brokers, and market participants can now establish access ahead of the exchange’s launch.
+
+- [Pico Expands Market Coverage with New Global Venues Across Key Asset Classes](/about/news/pico-expands-market-coverage-with-new-global-venues-across-key-asset-classes.md): Pico announces continued global expansion of its venue coverage, adding support for diverse venues across APAC, EMEA, and the Americas to enable seamless, low-latency access to liquidity as markets evolve toward 24/7 trading.
+
+- [Pico Expands Hardware Ecosystem with AMD Enterprise Solutions](/about/news/pico-expands-hardware-ecosystem-with-amd-enterprise-solutions.md): Pico announces a strategic collaboration with AMD, integrating high-performance AMD enterprise solutions across its Corvil Analytics and Redline Software product lines to deliver advanced latency and throughput advantages.
+
+- [Pico Redefines Network Observability with 200Gbps Continuous Network Capture and Analytics](/about/news/pico-redefines-network-observability-with-200gbps-continuous-network-capture-and-analytics.md): Pico announces the launch of the Corvil 12000, its most advanced network capture and application analytics appliance, delivering 200Gbps continuous capture with real-time analytics for AI-ready network observability pipelines.
+
+- [Pico Announces Corvil Analytics Has Been Selected by SIX to Strengthen Data Transparency and Operational Performance](/about/news/pico-announces-corvil-analytics-has-been-selected-by-six-to-strengthen-data-transparency-and-operational-performance.md): Pico announces that SIX, the global financial data and market infrastructure provider, is expanding its adoption and integration of Corvil Analytics to monitor its financial information business.
+
+- [Pico Appoints Holly Meacham as Chief Sales Officer to Drive Global Growth and Sales Strategy](/about/news/pico-appoints-holly-meacham-as-chief-sales-officer-to-drive-global-growth-and-sales-strategy.md): Pico appoints Holly Meacham as Chief Sales Officer and will play a pivotal role in advancing the company’s strategic goals as it continues to expand its presence across the financial services sector.
+
+- [Pico Establishes Relationship with Coinbase Derivatives to Enhance Infrastructure and Connectivity](/about/news/pico-establishes-relationship-with-coinbase-derivatives-to-enhance-infrastructure-and-connectivity.md): Announcing our collaboration with Coinbase Derivatives, a strategic relationship intended to enhance the exchange’s connectivity infrastructure for the benefit of all its participants. The initial phase of this relationship involved Pico’s expert team driving a complete infrastructure migration while maintaining operational continuity for a seamless transition.
+
+- [Pico Launches IntelliVUE: Seamlessly Integrating PicoNet™ and Corvil Analytics for Real-Time Network Connectivity Monitoring](/about/news/pico-launches-intellivue-seamlessly-integrating-piconet-tm-and-corvil-analytics-for-real-time-network-connectivity-monitoring.md): Introducing a new era in network monitoring for PicoNet™, IntelliVUE seamlessly integrates multiple data sources to provide a unified, multi-layered visualization with advanced performance analytics.
+
+- [Pico and BMLL Forge Groundbreaking Partnership to Offer Enhanced Historical and Real-Time Data Integration Capabilities](/about/news/pico-and-bmll-forge-groundbreaking-partnership-to-offer-enhanced-historical-and-real-time-data-integration-capabilities.md): Pico and BMLL announce a strategic partnership designed to uniquely address the growing need for simultaneous access to real-time and historical data sets to accelerate research, understand liquidity dynamics, and optimize trading outcomes.
+
+- [Pico Expands Redline Market Coverage with Global Equities, Options, and Rates Venues](/about/news/pico-expands-redline-market-coverage-with-global-equities-options-and-rates-venues.md): Pico expands Redline market coverage with over 30 new venues added to strengthen client trading options.
+
+- [Pico Expands European Market Coverage with MTS Markets](/about/news/pico-expands-european-market-coverage-with-mts-markets.md): Pico integrates MTS Markets onto PicoNet™, delivering enhanced market connectivity, comprehensive data and order entry solutions.
+
+- [Pico Partners with Blue Ocean Technologies for After-Hours US Equities Trading Expanding PicoNet’s Capabilities](/about/news/pico-partners-with-blue-ocean-technologies-for-after-hours-us-equities-trading.md): Pico partners with Blue Ocean Technologies, a capital markets fintech leader in global trading and data, to expand Pico’s market services for after-hours trading.
+
+- [Pico Launches Machine Learning and AI Capabilities in Corvil Analytics 10.0 Software Release](/about/news/pico-launches-machine-learning-and-ai-capabilities-in-corvil-analytics-10-software-release.md): Pico announces the general availability of its Corvil Analytics 10.0 software release, which leverages groundbreaking internal research in machine learning (ML) and artificial intelligence (AI).
+
+
+## Knowledge Base — Networking & Protocols
+
+- [What is a TCP Reset (RST)](/kb/what-is-a-tcp-reset-rst.md): TCP RST packet explainer
+- [What is a TCP Connection Refused](/kb/what-is-a-tcp-connection-refused.md): Cause and diagnosis of refused TCP connections
+- [What is a TCP Connection Reset by Peer](/kb/what-is-a-tcp-connection-reset-by-peer.md): When and why peers reset TCP connections
+- [What is listening on a TCP port](/kb/what-is-listening-on-a-tcp-port.md): Identifying processes bound to TCP ports
+- [How do I free up a TCP/IP port](/kb/how-do-i-free-up-a-tcp-ip-port.md): Releasing held ports on Unix/Linux
+- [How to check the status of a remote port](/kb/how-can-i-check-the-status-of-a-given-port-on-a-remote-host.md): Port status checks with netcat/nmap
+- [Multiple TCP clients on one server port](/kb/how-do-multiple-tcp-clients-connect-simultaneously-to-a-single-port-on-a-server.md): TCP socket multiplexing
+- [Two applications on the same port](/kb/can-two-applications-listen-to-the-same-port.md): SO_REUSEPORT and port sharing
+- [Maximum TCP packet size](/kb/what-is-the-maximum-packet-size-for-a-tcp-connection.md): MTU, MSS, and TCP segmentation
+- [Largest safe UDP packet size on the internet](/kb/what-is-the-largest-safe-udp-packet-size-on-the-internet.md): UDP fragmentation and the 1472-byte rule
+- [Highest TCP port number allowed](/kb/what-is-the-highest-tcp-port-number-allowed.md): Port range and 16-bit limit
+- [Relative merits of TCP and UDP in HFT](/kb/what-are-the-relative-merits-of-tcp-and-udp-in-high-frequency-trading.md): TCP vs UDP trade-offs in trading
+- [Simulate delayed and dropped packets in Linux](/kb/how-can-i-simulate-delayed-and-dropped-packets-in-linux.md): Linux tc/netem packet shaping
+- [Filter MAC addresses with tcpdump](/kb/how-does-one-filter-mac-addresses-using-tcpdump.md): tcpdump MAC filtering
+- [Capture incoming traffic with tcpdump](/kb/how-does-one-use-tcpdump-to-capture-incoming-traffic.md): tcpdump capture syntax
+- [Why tcpdump doesn't render ASCII packet data](/kb/why-does-tcpdump-not-render-ascii-packet-data-in-a-human-readable-format.md): tcpdump output format explained
+- [Wireshark "TCP segment of a reassembled PDU"](/kb/how-does-wireshark-annotate-some-packets-with-tcp-segment-of-a-reassembled-pdu.md): Wireshark reassembly annotations
+- [TCP ACKs to measure latency](/kb/how-can-tcp-acks-be-used-to-measure-latency-to-a-server.md): Latency measurement via ACK timing
+
+## Knowledge Base — Latency & HFT
+
+- [How is latency defined in HFT](/kb/how-is-latency-defined-in-high-frequency-trading.md): Tick-to-trade and tick-to-order definitions
+- [How is latency measured in HFT](/kb/how-is-latency-measured-in-high-frequency-trading.md): Hardware timestamping and measurement methodology
+- [How is latency analyzed and eliminated in HFT](/kb/how-is-latency-analyzed-and-eliminated-in-high-frequency-trading.md): Latency reduction techniques
+- [How accurately can latency be measured](/kb/how-accurately-can-latency-be-measured.md): Measurement precision and clock sync
+- [Best way to describe latency](/kb/what-is-the-best-way-to-describe-latency.md): Percentiles vs averages for latency reporting
+- [Lowest tick-to-trade latency without FPGAs](/kb/what-is-the-lowest-tick-to-order-or-tick-to-trade-latency-achievable-without-the-use-of-fpgas.md): Software-based latency limits
+
+## Knowledge Base — Trading Protocols
+
+- [FIX Protocol](/kb/fix-protocol.md): FIX protocol overview
+- [BATS Binary Order Entry](/kb/bats-binary-order-entry.md): BATS BOE protocol
+- [ITCH Protocol](/kb/itch-protocol.md): NASDAQ ITCH market data protocol
+- [OUCH Protocol](/kb/ouch-protocol.md): NASDAQ OUCH order entry protocol
+- [NASDAQ TotalView ITCH](/kb/nasdaq-total-view-itch.md): TotalView ITCH feed
+- [NYSE Pillar](/kb/nyse-pillar.md): NYSE Pillar trading platform
+- [What causes IOC orders to be canceled](/kb/what-causes-ioc-orders-to-be-canceled.md): IOC cancellation reasons
+- [What causes IOC at unmarketable price](/kb/what-causes-an-ioc-order-to-be-sent-at-an-unmarketable-price.md): IOC pricing edge cases
+
+## Knowledge Base — Machine Learning & AI
+
+- [The role of bias in neural networks](/kb/the-role-of-bias-in-neural-networks.md): Bias term in neural network architecture
+- [Linear vs logistic regression](/kb/difference-between-linear-regression-and-logistic-regression.md): When to use each
+- [Naive Bayes classifiers](/kb/what-are-naive-bayes-classifiers.md): Naive Bayes overview
+- [Anomaly detection](/kb/what-is-anomaly-detection.md): Anomaly detection techniques
+- [Genetic algorithms](/kb/what-is-a-genetic-algorithm.md): Genetic algorithm fundamentals
+- [How does a genetic algorithm work](/kb/how-does-a-genetic-algorithm-work.md): Genetic algorithm mechanics
+- [Tic-tac-toe AI algorithm](/kb/what-algorithm-for-a-tic-tac-toe-game-can-i-use-to-determine-the-best-move-for-the-ai.md): Minimax for tic-tac-toe
+- [Classification vs clustering in data mining](/kb/difference-between-classification-and-clustering-in-data-mining.md): Supervised vs unsupervised
+- [Training, validation, and test sets](/kb/differences-between-training-validation-test-set-in-machine-learning.md): Dataset split conventions
+- [Overfitting, variance, bias, and model complexity](/kb/overfitting-variance-bias-and-model-complexity-in-machine-learning.md): Bias-variance tradeoff
+- [False positive rate](/kb/what-is-a-false-positive-rate.md): FPR definition and use
+- [Same vs valid padding in TensorFlow](/kb/what-is-the-difference-between-same-and-valid-padding-in-tf-nn-max-pool-of-tensorflow.md): TF padding modes
+
+## Knowledge Base — Security & Operations
+
+- [Converting between certificate formats](/kb/converting-between-security-certificate-formats.md): PEM/DER/PFX conversions
+- [Create a self-signed certificate with OpenSSL](/kb/how-can-i-create-a-self-signed-certificate-with-openssl.md): OpenSSL self-signed cert workflow
+- [Get Chrome to accept a self-signed certificate](/kb/how-do-you-get-chrome-to-accept-a-self-signed-certificate.md): Chrome trust for dev certs
+- [OLTP vs OLAP](/kb/what-are-oltp-and-olap-and-the-difference-between-them.md): OLTP and OLAP database workloads compared
+
+## Resources
+
+- [Resources](/resources): Whitepapers, case studies, datasheets, webinars, ebooks, analyst reports
+- [Blog](/blog): Pico blog — product, market, and engineering posts
+- [News](/about/news): Pico news
+- [Coverage](/about/news/coverage): Press coverage and media mentions
+
+## Support
+
+- [Client Support](/support): 24/7 Global Operations Center contacts (AMRS, EMEA, APAC), client portal, knowledge base, hardware and installation docs
+- [Contact](/contact): General contact form
+
+## Company
+
+- [About Pico](/about): Company overview
+- [Leadership](/about/leadership): Pico leadership team
+- [Careers](/about/careers): Open roles at Pico

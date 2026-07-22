@@ -1,0 +1,32 @@
+generated: '2026-07-22'
+method: searched
+source: https://portal.pico.net/.well-known/openid-configuration
+note: Pico publishes no public API specification, so conformance can only be
+  asserted for the publicly observable identity layer of the customer portal
+  (portal.pico.net, a Salesforce Experience Cloud instance) that gates all
+  product and Corvil API documentation. Product APIs (Corvil REST API/SDK,
+  Redline InRush embedded API) are customer-only and their conformance is not
+  publicly verifiable.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: portal.pico.net exposes OAuth 2.0 authorization, token, revocation,
+    introspection, and dynamic client registration endpoints in its published
+    discovery metadata (well-known/pico-trading-openid-configuration.json).
+- id: oidc
+  conforms: true
+  evidence: portal.pico.net publishes /.well-known/openid-configuration (HTTP
+    200) with issuer, jwks_uri, userinfo_endpoint, RS256 id_token signing, and
+    response_types code/token/token id_token.
+- id: rfc8414-authorization-server-metadata
+  conforms: false
+  evidence: /.well-known/oauth-authorization-server returns 401 to anonymous
+    requests; only the OIDC-form discovery document is public.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on www.pico.net and 401 on
+    portal.pico.net.
+- id: rfc9457-problem-details
+  conforms: null
+  evidence: No public API specification or error documentation exists to
+    verify against.
