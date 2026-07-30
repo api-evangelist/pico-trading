@@ -14,6 +14,18 @@ description: Pico (pico.net) is a trading-infrastructure and financial market da
   developer portal, no self-serve signup, and no public API reference, with product
   documentation and the Corvil API docs behind the login-gated customer portal at
   portal.pico.net.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pico-trading.png
 tags:
 - Financial
