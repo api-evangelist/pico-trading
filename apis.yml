@@ -1,5 +1,8 @@
 aid: pico-trading
 url: https://raw.githubusercontent.com/api-evangelist/pico-trading/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Privately held; everything is sales-gated - there is no public developer portal, no self-serve signup, and no public API reference, with product documentation and the Corvil API docs behind the login-"
 name: Pico
 kind: company
 description: Pico (pico.net) is a trading-infrastructure and financial market data
